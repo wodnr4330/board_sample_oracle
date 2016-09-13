@@ -74,7 +74,6 @@ URL: http://localhost:8080/board/board2List
     );
     CREATE SEQUENCE BRDNO_SEQ;
       
-      
     CREATE TABLE TBL_BOARDFILE( 
       	FILENO NUMBER(11,0), 
     	BRDNO NUMBER(11,0), 
@@ -84,7 +83,6 @@ URL: http://localhost:8080/board/board2List
     	CONSTRAINT FILENO_PK PRIMARY KEY (FILENO)
     );
     CREATE SEQUENCE FILENO_SEQ;
-
 
     CREATE TABLE TBL_BOARDREPLY ( 
     	BRDNO NUMBER(11,0) NOT NULL, 
@@ -99,7 +97,6 @@ URL: http://localhost:8080/board/board2List
     	CONSTRAINT RENO_PK PRIMARY KEY (RENO)
     );
     	
-    	
     CREATE TABLE TBL_BOARDGROUP (
     	BGNO NUMBER(11,0), 
     	BGNAME VARCHAR2(50 BYTE), 
@@ -112,7 +109,6 @@ URL: http://localhost:8080/board/board2List
     	CONSTRAINT BGNO_PK PRIMARY KEY (BGNO)
     );
     CREATE SEQUENCE BGNO_SEQ;
-
 
 
 \board\src\main\webapp\WEB-INF 폴더에 있는 applicationContext.xml에서 적절한 DB 접속 정보를 입력하고 실행하면 된다.
