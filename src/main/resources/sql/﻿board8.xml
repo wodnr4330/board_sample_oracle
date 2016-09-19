@@ -36,7 +36,7 @@
             SELECT BRDNO_SEQ.NEXTVAL FROM DUAL
         </selectKey> 
         INSERT INTO TBL_BOARD(BGNO, BRDNO, BRDTITLE, BRDWRITER, BRDMEMO, BRDDATE, BRDHIT, BRDDELETEFLAG)
-        VALUES (BGNO_SEQ.NEXTVAL, #{brdno}, #{brdtitle}, #{brdwriter}, #{brdmemo}, SYSDATE, 0, 'N' )
+        VALUES (#{bgno}, #{brdno}, #{brdtitle}, #{brdwriter}, #{brdmemo}, SYSDATE, 0, 'N' )
     </insert>
     
     <update id="updateBoard8" parameterType="gu.board8.BoardVO">
