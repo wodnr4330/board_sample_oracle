@@ -86,7 +86,7 @@ URL: http://localhost:8080/board/board2List
 
     CREATE TABLE TBL_BOARDREPLY ( 
     	BRDNO NUMBER(11,0) NOT NULL, -- 게시물 번호
-    	RENO NUMBER(11,0), 댓글번호
+    	RENO NUMBER(11,0), -- 댓글번호
     	REWRITER VARCHAR2(10 BYTE) NOT NULL, -- 작성자
     	REMEMO VARCHAR2(500 BYTE), -- 댓글내용
     	REDATE DATE, -- 작성일자
